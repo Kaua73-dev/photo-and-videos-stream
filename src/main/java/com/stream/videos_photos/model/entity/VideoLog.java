@@ -1,7 +1,6 @@
 package com.stream.videos_photos.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,4 +9,12 @@ import lombok.Setter;
 @Entity
 @Table(name = "video_log")
 public class VideoLog {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+
+
 }
